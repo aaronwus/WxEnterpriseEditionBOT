@@ -1,0 +1,25 @@
+﻿{
+
+  "webhooks": [
+
+
+    {
+      "name": "通用传入接口机器人 ",
+      "webHookUrl": "http://{0}/API/PUSHMESSAGE",
+      "states": 2,
+      "webHookKey": "20191204"
+    },
+    {
+      "name": "web机器人测试群",
+      "webHookUrl": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=3305e544-55d4-4896-a1d8-130aa95a391f",
+      "states": 1,
+      "webHookKey": "201911291626"
+    },
+    {
+      "name": "test 二号 ",
+      "webHookUrl": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=3305e544-55d4-4896-a1d8-130aa95a391f",
+      "states": 1,
+      "webHookKey": "201911291626"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wxBot", "wxBot\wxBot.csproj", "{74157E87-27D7-43D4-B0C1-A8BC536752F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wxBotLibrary", "wxBotLibrary\wxBotLibrary.csproj", "{562C9E4F-E6B3-47DC-997A-7D600AD8EE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wxBotModel", "wxBotModel\wxBotModel.csproj", "{C1D58CAD-D1FF-41FA-8613-82FD4CED09E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74157E87-27D7-43D4-B0C1-A8BC536752F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74157E87-27D7-43D4-B0C1-A8BC536752F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74157E87-27D7-43D4-B0C1-A8BC536752F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74157E87-27D7-43D4-B0C1-A8BC536752F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562C9E4F-E6B3-47DC-997A-7D600AD8EE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562C9E4F-E6B3-47DC-997A-7D600AD8EE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562C9E4F-E6B3-47DC-997A-7D600AD8EE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562C9E4F-E6B3-47DC-997A-7D600AD8EE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D58CAD-D1FF-41FA-8613-82FD4CED09E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D58CAD-D1FF-41FA-8613-82FD4CED09E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D58CAD-D1FF-41FA-8613-82FD4CED09E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D58CAD-D1FF-41FA-8613-82FD4CED09E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9421D27B-E5A8-4892-996A-E327C315F486}
+	EndGlobalSection
+EndGlobal

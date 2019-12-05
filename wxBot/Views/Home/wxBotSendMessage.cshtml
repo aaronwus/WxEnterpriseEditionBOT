@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewData["Title"] = "wxBotSendMessage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-12"></div>
+</div>
+<div class="row text-center">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-3">
+        <h1>消息类型</h1>
+    </div>
+    <div class="col-md-3">
+        <div class="btn-group">
+            <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                选择消息类型 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li>
+                    <h2>
+                        <strong>
+                            <a href="javascript:void(0);" data-secID="Text" class="showSection">Text</a>
+                        </strong>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <strong>
+                            <a href="javascript:void(0);" data-secID="Markdown" class="showSection">Markdown</a>
+                        </strong>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <strong>
+                            <a href="javascript:void(0);" data-secID="Image" class="showSection">Image</a>
+                        </strong>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <strong>
+                            <a href="javascript:void(0);" data-secID="News" class="showSection">News</a>
+                        </strong>
+                    </h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row  sectionModel" id="Text">
+    <form action="/SendText" class=""  method="post" >
+        <input type="hidden" name="BotUrl" value="@ViewData["id"]" />
+        <div class="col-md-3">
+            <label>文本内容：</label>
+        </div>
+        <div class="col-md-9">
+            <textarea name="content" class="form-control" style="width:100%;"></textarea>
+        </div>
+        <div class="col-md-12">
+            <button type="submit" class="form-control btn btn-info"  >发送</button>
+        </div>
+    </form>
+</div>
+<div class="row  sectionModel" id="Markdown">
+   暂不支持
+</div>
+<div class="row  sectionModel" id="Image">
+    <div class="col-md-12" style="min-height:300px; border:1px solid #808080; border-radius:4px;" id="ImgList">
+        <div class="" style="border-top:1px solid #808080; position:absolute; bottom:0px;">
+            <div class="col-md-1 right">
+                submit
+            </div>
+            <div class="col-md-1 right">
+                select
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="">
+            <form id="uploadForm">
+                上传图片（只支持jpg 和 png ）： <input type="file" name="file" multiple />
+                <input type="button" value="上传" onclick="doUpload()" />
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row  sectionModel" id="News">
+
+</div>
+@section Scripts
+{
+    <script>
+        $(".showSection").click(function () {
+            var secID =$(this).attr('data-secID');
+          
+            //Text  Markdown    Image   News
+            $('.sectionModel').hide();
+            $('#' + secID).show();
+        });
+
+
+          function doUpload() {
+            var formData = new FormData($("#uploadForm")[0]);
+            $.ajax({
+                  url: "/UploadImages",
+                //beforeSend: function (xhr) {
+                //    xhr.setRequestHeader("XSRF-TOKEN",
+                //        $('input:hidden[name="__RequestVerificationToken"]').val());
+                //},
+                type: 'POST',
+                data: formData,
+                async: false,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (returndata) {
+                    alert(returndata);
+                },
+                error: function (returndata) {
+                    alert(returndata);
+                }
+            });
+        }
+    </script>
+<style>
+    .sectionModel{
+        display:none;
+    }
+</style>
+}

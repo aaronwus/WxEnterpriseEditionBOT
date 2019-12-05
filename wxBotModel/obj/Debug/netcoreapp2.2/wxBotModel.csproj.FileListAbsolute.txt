@@ -1,0 +1,8 @@
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotModel\bin\Debug\netcoreapp2.2\wxBotModel.deps.json
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotModel\bin\Debug\netcoreapp2.2\wxBotModel.dll
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotModel\bin\Debug\netcoreapp2.2\wxBotModel.pdb
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotModel\obj\Debug\netcoreapp2.2\wxBotModel.csprojAssemblyReference.cache
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotModel\obj\Debug\netcoreapp2.2\wxBotModel.AssemblyInfoInputs.cache
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotModel\obj\Debug\netcoreapp2.2\wxBotModel.AssemblyInfo.cs
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotModel\obj\Debug\netcoreapp2.2\wxBotModel.dll
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotModel\obj\Debug\netcoreapp2.2\wxBotModel.pdb

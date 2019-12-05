@@ -1,0 +1,11 @@
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotLibrary\bin\Debug\netcoreapp2.2\wxBotLibrary.deps.json
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotLibrary\bin\Debug\netcoreapp2.2\wxBotLibrary.dll
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotLibrary\bin\Debug\netcoreapp2.2\wxBotLibrary.pdb
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotLibrary\obj\Debug\netcoreapp2.2\wxBotLibrary.csprojAssemblyReference.cache
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotLibrary\obj\Debug\netcoreapp2.2\wxBotLibrary.AssemblyInfoInputs.cache
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotLibrary\obj\Debug\netcoreapp2.2\wxBotLibrary.AssemblyInfo.cs
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotLibrary\obj\Debug\netcoreapp2.2\wxBotLibrary.dll
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotLibrary\obj\Debug\netcoreapp2.2\wxBotLibrary.pdb
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotLibrary\bin\Debug\netcoreapp2.2\wxBotModel.dll
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotLibrary\bin\Debug\netcoreapp2.2\wxBotModel.pdb
+E:\SVN\Other\demo\wxBusinessBot\wxBot\wxBotLibrary\obj\Debug\netcoreapp2.2\wxBotLibrary.csproj.CopyComplete

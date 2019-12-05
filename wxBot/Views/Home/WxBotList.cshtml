@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewData["Title"] = "WxBotList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using wxBotModel
+@using System.Linq
+@{
+
+    var bots = _STATIC_WebhookList._static_web_hooks.webhooks;
+}
+
+<table class="table table-hover table-bordered  text-center">
+    <thead>
+        <tr>
+            <th>机器人名</th>
+            <th>机器人webHook</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (!bots.Any())
+        {
+            <tr>
+                <td colspan="4">没有找到微信企业机器人请在<code>wxBotCONFIGS/wxbotConfig.json</code>中添加配置 </td>
+            </tr>
+        }
+        @foreach (var item in bots)
+        {
+            <tr>
+                <td>@item.name</td>
+                <td>@item.webHookUrl</td>
+                <td>@(item.states==1?"运行中":"其它状态")</td>
+                <td>
+
+
+                    @if (item.states == 1)
+                    {
+                        <!-- Small button group -->
+                        <div class="btn-group">
+                            <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                操作组 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/wxBotSendMessage/@item.webHookKey">发送即时信息</a></li>
+                                <li><a href="/Tasks/@item.webHookKey">查看任务</a></li>
+                                <li><a href="/Historys/@item.webHookKey">发送历史</a></li>
+                            </ul>
+                        </div>
+                    }
+                    else if (item.states == 2)
+                    {
+                        <div class="btn-group">
+                            <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Api 操作 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/DOC/GetApiHOST/@item.webHookKey">得到URL</a></li>
+                                <li><a href="/PushResponse/@item.webHookKey">手动推送</a></li>
+                            </ul>
+                        </div>
+                    }
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
