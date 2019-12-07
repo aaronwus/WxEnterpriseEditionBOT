@@ -24,3 +24,5 @@ WxEnterpriseEditionBOT
 说明：  
      本着能用就行的思路：这个机器人一般用于提醒推送，所以就进行了简单的开发就一个应用层和一个类库。  
      正在逐步开发中，更多功能敬请期待。  
+目前功能截图：
+![Image text](http://tmp.bdowl.com/blogimages/daf744a264594eb891aca87903614ced.png)
